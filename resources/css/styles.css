@@ -1,3 +1,12 @@
+/*
+
+Orange color #e67e22
+
+*/
+
+/*------------------------------------------------------*/
+/*BASIC SETUP*/
+/*------------------------------------------------------*/
 * {
     margin: 0;
     padding: 0;
@@ -11,10 +20,70 @@ html {
     font-size: 21px;
     text-rendering: optimizeLegibility;
 }
+/*------------------------------------------------------*/
+/*REUSABLE COMPONENTS*/
+/*------------------------------------------------------*/
 .row {
     max-width: 1140px;
     margin: 0 auto 0 auto;
 }
+/*------HEADINGS--------*/
+h1 {
+    margin-top: 0;
+    margin-bottom: 20px;
+    color: #fff;
+    font-size: 240%;
+    font-weight: 300;
+    text-transform: uppercase;
+    word-spacing: 3px;
+    letter-spacing: 1px;
+}
+/*------BUTTONS--------*/
+.btn:link,
+.btn:visited {
+    display: inline-block; /* this will create a block whose margins and padding can be set manually */
+    padding: 10px 30px; /* used for giving padding to the button top and left */
+    /* if px is not written that the values will be used as top and bottom 10 and left and right 30 */
+    font-weight: 300;
+    text-decoration: none; /*to get rid of the underline */
+    border-radius: 200px; /* make a radius for the button */
+    transition: background-color 0.2s, border 0.2s, color 0.2s;
+}
+
+.btn:hover,
+.btn:active {
+     background-color: #bf6516;
+}
+
+.btn-full:link,
+.btn-full:visited {
+    background-color: #e67e22; /* this will give a background color to the button */
+    border: 1px solid #e67e22;
+    color: #fff; /*color of the text inside te button*/
+    margin-right: 10px;
+}
+
+.btn-full:active,
+.btn-full:hover {
+    border: 1px solid #bf6516;
+    background-color: #bf6516;
+
+}
+
+.btn-ghost:link,
+.btn-ghost:visited{
+    border: 1px solid #e67e22; /* solid is used to draw a border line */
+    color: #e67e22;
+}
+
+.btn-ghost:active,
+.btn-ghost:hover {
+    border: 1px solid #bf6516; /* solid is used to draw a border line */
+    color: #fff;
+}
+/*------------------------------------------------------*/
+/*HEADER*/
+/*------------------------------------------------------*/
 header {
     background-image: linear-gradient( rgba(0, 0, 0, 0.7) , rgba(0, 0, 0, 0.7) ), url(img/hero.jpg);
     height: 100vh;
@@ -28,55 +97,38 @@ header {
     left: 50%;
     transform: translate(-50%,-50%); /*used for 2d translation*/
 }
-h1 {
-    margin-top: 0;
-    margin-bottom: 20px;
+
+.logo {
+    height: 100px;
+    width: auto;
+    float: left;
+    margin-top: 20px;
+}
+
+.main-nav {
+    float: right;
+    list-style: none;
+    margin-top: 55px;
+}
+
+.main-nav li {    /* this format is used to select element inside an element here by putting li all the li elements are being selected*/
+    display: inline-block;
+    margin-left: 40px;
+}
+
+.main-nav li a:link,
+.main-nav li a:visited{
+    padding-bottom: 5px;
+    padding-top: 5px;
     color: #fff;
-    font-size: 240%;
-    font-weight: 300;
+    text-decoration: none;
     text-transform: uppercase;
-    word-spacing: 3px;
-    letter-spacing: 1px;
+    font-size: 90%; /*here to make the webpage relative use the percentage as it will resize the text a relative order here 90% means 90% of the absolute text size that is 21px so the size is 19px*/
+    border-bottom: 2px solid transparent;
+    transition: border-bottom 0.2s, color 10s;
 }
-.btn:link,
-.btn:visited{
-    display: inline-block; /* this will create a block whose margins and padding can be set manually */
-    padding: 10px 30px; /* used for giving padding to the button top and left */
-    /* if px is not written that the values will be used as top and bottom 10 and left and right 30 */
-    font-weight: 300;
-    text-decoration: none; /*to get rid of the underline */
-    border-radius: 200px; /* make a radius for the button */
-    transition: background-color 0.2s, border 0.2s, color 0.2s;
-}
-
-.btn:hover,
-.btn:active{
-     background-color: #bf6516;
-}
-
-.btn-full:link,
-.btn-full:visited{
-    background-color: #e67e22; /* this will give a background color to the button */
-    border: 1px solid #e67e22;
-    color: #fff; /*color of the text inside te button*/
-    margin-right: 10px;
-}
-
-.btn-full:active,
-.btn-full:hover{
-    border: 1px solid #bf6516;
-    background-color: #bf6516;
-
-}
-
-.btn-ghost:link,
-.btn-ghost:visited{
-    border: 1px solid #e67e22; /* solid is used to draw a border line */
-    color: #e67e22;
-}
-
-.btn-ghost:active,
-.btn-ghost:hover{
-    border: 1px solid #bf6516; /* solid is used to draw a border line */
-    color: #fff;
+.main-nav li a:active,
+.main-nav li a:hover{
+    border-bottom: 2px solid #e67e22;
+    color: aqua;
 }
