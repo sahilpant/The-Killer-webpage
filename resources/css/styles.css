@@ -125,7 +125,7 @@ header {
     text-transform: uppercase;
     font-size: 90%; /*here to make the webpage relative use the percentage as it will resize the text a relative order here 90% means 90% of the absolute text size that is 21px so the size is 19px*/
     border-bottom: 2px solid transparent;
-    transition: border-bottom 0.2s, color 10s;
+    transition: border-bottom 0.2s, color 0.2s;
 }
 .main-nav li a:active,
 .main-nav li a:hover{
