@@ -50,6 +50,7 @@
     .plan-box {
         width: 100%;
         margin-left: 0%;
+        -webkit-box-shadow: 0px 2px 10px;
         box-shadow: 0px 2px 10px;
     }
 
@@ -61,7 +62,6 @@
         width: 100%;
         margin-left: 2%;
     }
-
 
 }
 
@@ -80,7 +80,10 @@
 
    .row,
    .hero-text-box { padding: 0 4%;}
-    .col { width: 100%; }
+    .col {
+        width: 100%;
+        margin: 0% 0 4% 0%;
+    }
 
     .main-nav { display: none; }
 
@@ -95,10 +98,9 @@
         margin-left: 0%;
     }
 
-    .app-screen {
-        width: 35%;
-        margin-right: 30%;
-    }
+.steps-box:first-child {
+    text-align: center;
+}
 
 
     .contact-form { width: 90%;}
