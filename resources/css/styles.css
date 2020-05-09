@@ -244,6 +244,23 @@ header {
     color: #00ffff;
 }
 
+/*MOBILE NAVIGATION*/
+
+.mobile-nav-icon {
+    float: right;
+    margin-top: 30px;
+    cursor: pointer;
+    display: none;
+}
+
+
+.mobile-nav-icon i {
+    font-size: 200%;
+    color: #fff;
+}
+
+
+
 /*STICKY NAVIGATION*/
 
 .sticky {
@@ -606,19 +623,19 @@ footer p {
 .js--wp-3
 {
     opacity: 0;
-    -webkit-animation-duration: 1s;
-    animation-duration: 1s;
+    -webkit-animation-duration: 0.7s;
+    animation-duration: 0.7s;
 }
 
 .js--wp-1.animate__animated,
 .js--wp-2.animate__animated,
 .js--wp-3.animate__animated {
     opacity: 1;
-    -webkit-animation-duration: 2s;
+    -webkit-animation-duration: 0.7s;
+    animation-duration: 0.7s;
 }
 
-
-.js--wp-4 {
-    -webkit-animation-duration: 1s;
-    animation-duration: 1s;
+.js--wp-4.animate__animated {
+    -webkit-animation-duration: 0.7s;
+    animation-duration: 0.7s;
 }
