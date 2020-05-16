@@ -30,6 +30,7 @@ $(document).ready(function(){
 
     })
 
+    /**SMOOTH SCROLLING EFFECT**/
 
     // Select all links with hashes
 $('a[href*="#"]')

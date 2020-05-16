@@ -301,7 +301,7 @@ header {
 
 .meals-photo {
     width: 100%;
-    margin; 0;
+    margin: 0;
     overflow: hidden;
     background: #000;
 }
@@ -357,7 +357,7 @@ header {
 .work-step div {
     color: #e67e22;
     border: 2px solid #e67e22;
-    display: inline-block;
+    display: block;
     border-radius: 50%;
     height: 50px;
     width: 50px;
@@ -591,7 +591,7 @@ footer p {
 .fb,
 .tweet,
 .google,
-.insta,
+.insta
 {
     -webkit-transition: color 0.2s;
     transition: color 0.2s
